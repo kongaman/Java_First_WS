@@ -2,6 +2,12 @@ package com.bharath.ws.soap.dto;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(name="CreditCardInfo")
+//XmlAccessorType is left out in this class, because its optional
+//by default the JAXB Runtime will serialize and deserialize into the exact xml-elements
+//with the names given here
 public class CreditCardInfo {
 
 	String cardNumber;
